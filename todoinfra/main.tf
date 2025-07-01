@@ -62,5 +62,10 @@ module "database" {
     resource_group_name = "todo-infra-rg1"
     db_server_name = "todo-infra-batabase-server"
 }
+module "resource_group" {
+  source                  = "../modules/resource_group"
+  resource_group_name     = "todo-infra-rg22"
+  resource_group_location = "East US"
+}
 
 
